@@ -127,7 +127,7 @@ function App() {
 
       <Header onAddFood={() => setAddModalOpen(true)} />
 
-      {/* Configuration warning */}
+      {/* Configuration warning - only show when NOT configured */}
       {!isSupabaseConfigured && (
         <div className="fixed top-20 left-1/2 transform -translate-x-1/2 z-40 max-w-lg w-full mx-4">
           <div className="glass-card border-accent-500/30 bg-accent-500/10 p-4 flex items-start gap-3">
